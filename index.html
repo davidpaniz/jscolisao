@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>JS Colisão</title>
+        <meta charset="utf-8"> 
+        <style>
+            canvas {
+                border: 2px solid black;
+            }
+            body {
+                overflow-x: hidden;
+                overflow-y: hidden;
+            }
+            label {
+                font-size: 12px;
+            }
+            input {
+                font-size: 14px;
+                width: 80px;
+            }
+        </style>
+        <script src="colisao.js"></script>
+    </head>
+    <body>
+        <canvas id="canvas" width="600" height="100" content="width=device-width, minimum-scale=2.0, maximum-scale=2.0, user-scalable=no" ></canvas>
+
+        <p>
+            <label for="m1" >Massa obj 1</label>
+            <input type="number" id="m1" value="1" />
+            <label for="v1" >Vel. inicial obj 1</label>
+            <input type="number" id="v1" value="2" />
+            <label for="p1" >Posição inicial obj 1</label>
+            <input type="number" id="p1" value="50" />
+        </p>
+
+        <p>
+            <label for="m2" >Massa obj 2</label>
+            <input type="number" id="m2" value="1" />
+            <label for="v2" >Vel.inicial obj 2</label>
+            <input type="number" id="v2" value="0" />
+            <label for="p2" >Posição inicial obj 2</label>
+            <input type="number" id="p2" value="350" />
+        </p>
+
+        <p>
+            <label for="e" >Coeficianete de restituição</label>
+            <input type="number" id="e" value="1" />
+            <button onclick="execute();">Start!</button>
+        </p>
+    </body>
+</html>
